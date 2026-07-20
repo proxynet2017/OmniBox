@@ -56,6 +56,13 @@ OmniBox takes the opposite approach:
 Firmware release assets include `.elf`, `.bin`, `.hex`, `.map` and source
 archive files.
 
+## 3D Preview
+
+The board can be inspected as a rendered image or as a STEP model:
+
+- [board render PNG](docs/images/omnibox-v1-board-iso-complete.png)
+- [board STEP model](docs/3d/omnibox-v1-board-complete.step)
+
 ## Hardware Highlights
 
 | Area | OmniBox V1 |

@@ -1,7 +1,9 @@
 
 #include <stdio.h>
+#include <string.h>
 #include "../shared/pt_frame.h"
 #include "../shared/pt_proto.h"
+#include "../shared/pt_wire.h"
 
 static int g_fail = 0, g_tests = 0;
 #define CHECK(cond, msg) do { g_tests++; if (!(cond)) { printf(" FAIL: %s\n", msg); g_fail++; } } while (0)
@@ -49,12 +51,33 @@ static void test_cap_guard(void)
   CHECK(pt_frame_build(small, sizeof small, 0, CMD_OPEN, (const uint8_t *)"xxxx", 4) == -1, "insufficient capacity -> -1");
 }
 
+static void test_msg_wire_preserves_timestamp(void)
+{
+  printf("test_msg_wire_preserves_timestamp\n");
+  PASSTHRU_MSG m, out;
+  uint8_t buf[128];
+  memset(&m, 0, sizeof(m));
+  m.ProtocolID = J2534_CAN;
+  m.RxStatus = J2534_CAN_29BIT_ID;
+  m.TxFlags = OMNI_CAN_FD_FRAME;
+  m.Timestamp = 0x12345678;
+  m.ExtraDataIndex = 6;
+  m.DataSize = 6;
+  for (uint32_t i = 0; i < m.DataSize; i++) m.Data[i] = (uint8_t)(0xA0 + i);
+  int n = pt_wire_encode(buf, sizeof(buf), &m);
+  CHECK(n == (int)(PT_WIRE_HDR + m.DataSize), "wire encoded length");
+  CHECK(pt_wire_decode(buf, (uint32_t)n, &out) == n, "wire decode status");
+  CHECK(out.Timestamp == 0x12345678, "timestamp preserved");
+  CHECK(out.ExtraDataIndex == 6 && out.Data[5] == 0xA5, "metadata and data preserved");
+}
+
 int main(void)
 {
   test_crc_vector();
   test_build_parse();
   test_corruption();
   test_cap_guard();
+  test_msg_wire_preserves_timestamp();
   printf("\n%d/%d checks passed\n", g_tests - g_fail, g_tests);
   return g_fail ? 1 : 0;
 }

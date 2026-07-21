@@ -178,7 +178,7 @@ static void test_e2e_payload_filter(void)
   pt_caps_t caps;
   pt_get_caps(&h, &caps);
   PASSTHRU_MSG out; uint32_t num = 1;
-  CHECK(pt_read_msgs(&h, ch, &out, &num, 20) == J2534_ERR_BUFFER_EMPTY, "payload mismatch rejected");
+  CHECK(pt_read_msgs(&h, ch, &out, &num, 20) == J2534_ERR_TIMEOUT, "payload mismatch rejected");
 
   uint8_t accept[2] = { 0xAA, 0x02 };
   mock_bus_queue_can(0x123, accept, 2);
@@ -293,7 +293,7 @@ static void test_e2e_29bit_scan(void)
   PASSTHRU_MSG req2; mk_req(&req2, 0x18DA10F1, uds, 2); num = 1;
   pt_write_msgs(&h, ch, &req2, &num, 100);
   PASSTHRU_MSG r2; num = 1;
-  CHECK(pt_read_msgs(&h, ch, &r2, &num, 50) == J2534_ERR_BUFFER_EMPTY, "ECU 0x10 silent (not emulated)");
+  CHECK(pt_read_msgs(&h, ch, &r2, &num, 50) == J2534_ERR_TIMEOUT, "ECU 0x10 silent (not emulated)");
 }
 
 

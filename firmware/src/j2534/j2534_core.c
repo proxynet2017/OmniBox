@@ -388,7 +388,7 @@ uint8_t j2534_read_msgs(uint32_t channel_id, j2534_msg_t *out, uint32_t *count, 
     c->rx_overflow = 0;
     return J2534_ERR_BUFFER_OVERFLOW;
   }
-  return got ? J2534_STATUS_NOERROR : J2534_ERR_BUFFER_EMPTY;
+  return got ? J2534_STATUS_NOERROR : (timeout_ms ? J2534_ERR_TIMEOUT : J2534_ERR_BUFFER_EMPTY);
 }
 
 

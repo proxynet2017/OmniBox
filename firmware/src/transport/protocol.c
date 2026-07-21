@@ -64,17 +64,18 @@ static uint8_t do_read_msgs(uint32_t cid, uint32_t max, uint32_t timeout,
               const uint8_t **out, uint16_t *out_n)
 {
   uint32_t count = 0, off = 4;
+  uint8_t first_status = J2534_STATUS_NOERROR;
   for (uint32_t k = 0; k < max; k++) {
     uint32_t one = 1;
     uint8_t rc = j2534_read_msgs(cid, &s_scratch, &one, k == 0 ? timeout : 0);
-    if (rc != J2534_STATUS_NOERROR || one == 0) break;
+    if (rc != J2534_STATUS_NOERROR || one == 0) { if (k == 0) first_status = rc; break; }
     int w = j2534_wire_encode_msg(s_respbuf + off, (uint32_t)sizeof(s_respbuf) - off, &s_scratch);
     if (w < 0) break;
     off += (uint32_t)w; count++;
   }
   j2534_wire_wr32(s_respbuf, count);
   *out = s_respbuf; *out_n = (uint16_t)off;
-  return count ? J2534_STATUS_NOERROR : J2534_ERR_BUFFER_EMPTY;
+  return count ? J2534_STATUS_NOERROR : first_status;
 }
 
 

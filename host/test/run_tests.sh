@@ -12,7 +12,9 @@ run() {
   "/tmp/$name"
 }
 
-run test_frame test_frame.c ../shared/pt_frame.c
+run test_frame test_frame.c ../shared/pt_frame.c ../shared/pt_wire.c
+
+run test_isotp test_isotp.c $FW/j2534/isotp.c
 
 run test_e2e test_e2e.c \
     ../ptcore/pt_core.c ../shared/pt_frame.c ../shared/pt_wire.c \

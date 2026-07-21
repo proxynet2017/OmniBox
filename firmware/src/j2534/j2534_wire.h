@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include "j2534_defs.h"
 
-#define J2534_WIRE_MSG_HDR 20u  
+#define J2534_WIRE_MSG_HDR 24u
 
 
 int j2534_wire_encode_msg(uint8_t *out, uint32_t cap, const j2534_msg_t *m);

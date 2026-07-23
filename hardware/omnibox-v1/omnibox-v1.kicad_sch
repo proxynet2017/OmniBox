@@ -1,93 +1,479 @@
 (kicad_sch
-	(version 20231120)(generator "j2534_gen")(generator_version "8.0")
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
 	(uuid "99cf8779-9763-f002-27bc-877b87594a28")
 	(paper "A3")
 	(title_block
-		(title "Interface USB-OBD J2534 — racine")(rev "v1")
+		(title "Interface USB-OBD J2534 — racine")
+		(rev "v1")
 		(company "OmniBox")
 	)
 	(lib_symbols)
-	(sheet (at 25.40 30.00)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "62f54179-a9f1-15ce-04c6-1ac1497d07c5")
-		(property "Sheetname" "power_protection" (at 25.40 29.30 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/power_protection.kicad_sch" (at 25.40 69.30 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "2"))))
-	)
-	(sheet (at 108.90 30.00)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "b6279b43-4fff-9de9-28d9-49817d2d78e0")
-		(property "Sheetname" "connector_db25" (at 108.90 29.30 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/connector_db25.kicad_sch" (at 108.90 69.30 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "3"))))
-	)
-	(sheet (at 192.40 30.00)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "e7af9aa0-8598-b5b8-0c28-a98d9c0342b7")
-		(property "Sheetname" "isolation_barrier" (at 192.40 29.30 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/isolation_barrier.kicad_sch" (at 192.40 69.30 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "4"))))
-	)
-	(sheet (at 25.40 86.10)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "dcc6a650-301e-6ef0-ab21-629dcdbe6b02")
-		(property "Sheetname" "mcu" (at 25.40 85.40 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/mcu.kicad_sch" (at 25.40 125.40 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "5"))))
-	)
-	(sheet (at 108.90 86.10)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "860af168-2930-bafa-9c95-cb7b51ed330d")
-		(property "Sheetname" "can_fd" (at 108.90 85.40 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/can_fd.kicad_sch" (at 108.90 125.40 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "6"))))
-	)
-	(sheet (at 192.40 86.10)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "b3398c5a-0818-29de-1716-ffab8b226223")
-		(property "Sheetname" "kline" (at 192.40 85.40 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/kline.kicad_sch" (at 192.40 125.40 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "7"))))
-	)
-	(sheet (at 25.40 142.20)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "bc37378d-b563-811e-6631-470395a699fd")
-		(property "Sheetname" "swcan_j1850" (at 25.40 141.50 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/swcan_j1850.kicad_sch" (at 25.40 181.50 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "8"))))
-	)
-	(sheet (at 108.90 142.20)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "49385104-ccac-ef70-734a-cc797084eb85")
-		(property "Sheetname" "routing_matrix" (at 108.90 141.50 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/routing_matrix.kicad_sch" (at 108.90 181.50 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "9"))))
-	)
-	(sheet (at 192.40 142.20)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
-		(uuid "96816457-fbb4-60fa-a568-54c4caa78442")
-		(property "Sheetname" "feps" (at 192.40 141.50 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/feps.kicad_sch" (at 192.40 181.50 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "10"))))
-	)
-	(sheet (at 25.40 198.30)(size 63.50 38.10)(fields_autoplaced yes)
-		(stroke (width 0.1524)(type solid))(fill (color 0 0 0 0.0000))
+	(sheet
+		(at 25.4 198.3)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
 		(uuid "18d70913-c061-d4bf-0221-c31a47fbcb2f")
-		(property "Sheetname" "usb_isolated" (at 25.40 197.60 0)(effects (font (size 1.6 1.6))(justify left bottom)))
-		(property "Sheetfile" "sheets/usb_isolated.kicad_sch" (at 25.40 237.60 0)(effects (font (size 1.0 1.0))(justify left top)))
-		(instances (project "j2534-interface" (path "/99cf8779-9763-f002-27bc-877b87594a28" (page "11"))))
+		(property "Sheetname" "usb_isolated"
+			(at 25.4 197.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/usb_isolated.kicad_sch"
+			(at 25.4 237.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 108.9 142.2)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "49385104-ccac-ef70-734a-cc797084eb85")
+		(property "Sheetname" "routing_matrix"
+			(at 108.9 141.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/routing_matrix.kicad_sch"
+			(at 108.9 181.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 30)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "62f54179-a9f1-15ce-04c6-1ac1497d07c5")
+		(property "Sheetname" "power_protection"
+			(at 25.4 29.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/power_protection.kicad_sch"
+			(at 25.4 69.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 108.9 86.1)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "860af168-2930-bafa-9c95-cb7b51ed330d")
+		(property "Sheetname" "can_fd"
+			(at 108.9 85.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/can_fd.kicad_sch"
+			(at 108.9 125.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 192.4 142.2)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "96816457-fbb4-60fa-a568-54c4caa78442")
+		(property "Sheetname" "feps"
+			(at 192.4 141.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/feps.kicad_sch"
+			(at 192.4 181.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 192.4 86.1)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b3398c5a-0818-29de-1716-ffab8b226223")
+		(property "Sheetname" "kline"
+			(at 192.4 85.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/kline.kicad_sch"
+			(at 192.4 125.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 108.9 30)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b6279b43-4fff-9de9-28d9-49817d2d78e0")
+		(property "Sheetname" "connector_db25"
+			(at 108.9 29.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/connector_db25.kicad_sch"
+			(at 108.9 69.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 142.2)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bc37378d-b563-811e-6631-470395a699fd")
+		(property "Sheetname" "swcan_j1850"
+			(at 25.4 141.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/swcan_j1850.kicad_sch"
+			(at 25.4 181.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 86.1)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "dcc6a650-301e-6ef0-ab21-629dcdbe6b02")
+		(property "Sheetname" "mcu"
+			(at 25.4 85.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/mcu.kicad_sch"
+			(at 25.4 125.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 192.4 30)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e7af9aa0-8598-b5b8-0c28-a98d9c0342b7")
+		(property "Sheetname" "isolation_barrier"
+			(at 192.4 29.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/isolation_barrier.kicad_sch"
+			(at 192.4 69.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28"
+					(page "4")
+				)
+			)
+		)
 	)
 	(sheet_instances
-		(path "/" (page "1"))
-		(path "/62f54179-a9f1-15ce-04c6-1ac1497d07c5" (page "2"))
-		(path "/b6279b43-4fff-9de9-28d9-49817d2d78e0" (page "3"))
-		(path "/e7af9aa0-8598-b5b8-0c28-a98d9c0342b7" (page "4"))
-		(path "/dcc6a650-301e-6ef0-ab21-629dcdbe6b02" (page "5"))
-		(path "/860af168-2930-bafa-9c95-cb7b51ed330d" (page "6"))
-		(path "/b3398c5a-0818-29de-1716-ffab8b226223" (page "7"))
-		(path "/bc37378d-b563-811e-6631-470395a699fd" (page "8"))
-		(path "/49385104-ccac-ef70-734a-cc797084eb85" (page "9"))
-		(path "/96816457-fbb4-60fa-a568-54c4caa78442" (page "10"))
-		(path "/18d70913-c061-d4bf-0221-c31a47fbcb2f" (page "11"))
+		(path "/"
+			(page "1")
+		)
 	)
+	(embedded_fonts no)
 )

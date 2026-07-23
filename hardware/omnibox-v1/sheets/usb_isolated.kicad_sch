@@ -1,287 +1,2244 @@
 (kicad_sch
-	(version 20231120)(generator "j2534_gen")(generator_version "8.0")
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
 	(uuid "02080e12-4910-0cf1-f44b-22c1bf7cc57f")
 	(paper "A2")
 	(title_block
-		(title "J2534 — usb_isolated")(rev "v1")
-		(company "Interface USB-OBD J2534")
+		(title "J2534 — usb_isolated")
+		(rev "v1")
+		(company "OmniBox")
 	)
 	(lib_symbols
 		(symbol "j2534gen:Connector_USB_C_Receptacle"
-			(pin_names (offset 0.508))(exclude_from_sim no)(in_bom yes)(on_board yes)
-			(property "Reference" "J" (at -6.35 19.05 0)(effects (font (size 1.27 1.27))(justify left)))
-			(property "Value" "Connector_USB_C_Receptacle" (at -6.35 -19.78 0)(effects (font (size 1.0 1.0))(justify left)))
-			(property "Footprint" "" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(property "Datasheet" "~" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -6.35 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Connector_USB_C_Receptacle"
+				(at -6.35 -19.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Connector_USB_C_Receptacle_0_1"
-				(rectangle (start -6.35 17.78)(end 6.35 -17.78)(stroke (width 0.2)(type default))(fill (type background)))
+				(rectangle
+					(start -6.35 17.78)
+					(end 6.35 -17.78)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 			)
 			(symbol "Connector_USB_C_Receptacle_1_1"
-				(pin passive line (at -10.16 15.24 0)(length 3.81)
-					(name "GND" (effects (font (size 1.0 1.0))))
-					(number "A1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 12.70 0)(length 3.81)
-					(name "RX2-" (effects (font (size 1.0 1.0))))
-					(number "A10" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 10.16 0)(length 3.81)
-					(name "RX2+" (effects (font (size 1.0 1.0))))
-					(number "A11" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 7.62 0)(length 3.81)
-					(name "GND" (effects (font (size 1.0 1.0))))
-					(number "A12" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 5.08 0)(length 3.81)
-					(name "TX1+" (effects (font (size 1.0 1.0))))
-					(number "A2" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 2.54 0)(length 3.81)
-					(name "TX1-" (effects (font (size 1.0 1.0))))
-					(number "A3" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 0.00 0)(length 3.81)
-					(name "VBUS" (effects (font (size 1.0 1.0))))
-					(number "A4" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -2.54 0)(length 3.81)
-					(name "CC1" (effects (font (size 1.0 1.0))))
-					(number "A5" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -5.08 0)(length 3.81)
-					(name "D+" (effects (font (size 1.0 1.0))))
-					(number "A6" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -7.62 0)(length 3.81)
-					(name "D-" (effects (font (size 1.0 1.0))))
-					(number "A7" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -10.16 0)(length 3.81)
-					(name "SBU1" (effects (font (size 1.0 1.0))))
-					(number "A8" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -12.70 0)(length 3.81)
-					(name "VBUS" (effects (font (size 1.0 1.0))))
-					(number "A9" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -15.24 0)(length 3.81)
-					(name "GND" (effects (font (size 1.0 1.0))))
-					(number "B1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 13.97 180)(length 3.81)
-					(name "RX1-" (effects (font (size 1.0 1.0))))
-					(number "B10" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 11.43 180)(length 3.81)
-					(name "RX1+" (effects (font (size 1.0 1.0))))
-					(number "B11" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 8.89 180)(length 3.81)
-					(name "GND" (effects (font (size 1.0 1.0))))
-					(number "B12" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 6.35 180)(length 3.81)
-					(name "TX2+" (effects (font (size 1.0 1.0))))
-					(number "B2" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 3.81 180)(length 3.81)
-					(name "TX2-" (effects (font (size 1.0 1.0))))
-					(number "B3" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 1.27 180)(length 3.81)
-					(name "VBUS" (effects (font (size 1.0 1.0))))
-					(number "B4" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -1.27 180)(length 3.81)
-					(name "CC2" (effects (font (size 1.0 1.0))))
-					(number "B5" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -3.81 180)(length 3.81)
-					(name "D+" (effects (font (size 1.0 1.0))))
-					(number "B6" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -6.35 180)(length 3.81)
-					(name "D-" (effects (font (size 1.0 1.0))))
-					(number "B7" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -8.89 180)(length 3.81)
-					(name "SBU2" (effects (font (size 1.0 1.0))))
-					(number "B8" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -11.43 180)(length 3.81)
-					(name "VBUS" (effects (font (size 1.0 1.0))))
-					(number "B9" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -13.97 180)(length 3.81)
-					(name "SHIELD" (effects (font (size 1.0 1.0))))
-					(number "S1" (effects (font (size 0.9 0.9)))))
+				(pin passive line
+					(at -10.16 15.24 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 3.81)
+					(name "CC1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 3.81)
+					(name "D+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -7.62 0)
+					(length 3.81)
+					(name "D-"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -10.16 0)
+					(length 3.81)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -12.7 0)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 7.62 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -15.24 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 1.27 180)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -1.27 180)
+					(length 3.81)
+					(name "CC2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -3.81 180)
+					(length 3.81)
+					(name "D+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -6.35 180)
+					(length 3.81)
+					(name "D-"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -8.89 180)
+					(length 3.81)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -11.43 180)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 8.89 180)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "B12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -13.97 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
 			)
-		)
-		(symbol "j2534gen:Device_R"
-			(pin_names (offset 0.508))(exclude_from_sim no)(in_bom yes)(on_board yes)
-			(property "Reference" "R" (at -6.35 6.35 0)(effects (font (size 1.27 1.27))(justify left)))
-			(property "Value" "Device_R" (at -6.35 -7.08 0)(effects (font (size 1.0 1.0))(justify left)))
-			(property "Footprint" "" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(property "Datasheet" "~" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(symbol "Device_R_0_1"
-				(rectangle (start -6.35 5.08)(end 6.35 -5.08)(stroke (width 0.2)(type default))(fill (type background)))
-			)
-			(symbol "Device_R_1_1"
-				(pin passive line (at -10.16 0.00 0)(length 3.81)
-					(name "~" (effects (font (size 1.0 1.0))))
-					(number "1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 0.00 180)(length 3.81)
-					(name "~" (effects (font (size 1.0 1.0))))
-					(number "2" (effects (font (size 0.9 0.9)))))
-			)
-		)
-		(symbol "j2534gen:Power_Protection_USBLC6-2SC6"
-			(pin_names (offset 0.508))(exclude_from_sim no)(in_bom yes)(on_board yes)
-			(property "Reference" "D" (at -6.35 6.35 0)(effects (font (size 1.27 1.27))(justify left)))
-			(property "Value" "Power_Protection_USBLC6-2SC6" (at -6.35 -7.08 0)(effects (font (size 1.0 1.0))(justify left)))
-			(property "Footprint" "" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(property "Datasheet" "~" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(symbol "Power_Protection_USBLC6-2SC6_0_1"
-				(rectangle (start -6.35 5.08)(end 6.35 -5.08)(stroke (width 0.2)(type default))(fill (type background)))
-			)
-			(symbol "Power_Protection_USBLC6-2SC6_1_1"
-				(pin passive line (at -10.16 2.54 0)(length 3.81)
-					(name "I/O1" (effects (font (size 1.0 1.0))))
-					(number "1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 0.00 0)(length 3.81)
-					(name "GND" (effects (font (size 1.0 1.0))))
-					(number "2" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at -10.16 -2.54 0)(length 3.81)
-					(name "I/O2" (effects (font (size 1.0 1.0))))
-					(number "3" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 2.54 180)(length 3.81)
-					(name "I/O2" (effects (font (size 1.0 1.0))))
-					(number "4" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 0.00 180)(length 3.81)
-					(name "VBUS" (effects (font (size 1.0 1.0))))
-					(number "5" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 -2.54 180)(length 3.81)
-					(name "I/O1" (effects (font (size 1.0 1.0))))
-					(number "6" (effects (font (size 0.9 0.9)))))
-			)
-		)
-		(symbol "j2534gen:loc_D_TVS"
-			(pin_names (offset 0.508))(exclude_from_sim no)(in_bom yes)(on_board yes)
-			(property "Reference" "D" (at -6.35 6.35 0)(effects (font (size 1.27 1.27))(justify left)))
-			(property "Value" "loc_D_TVS" (at -6.35 -7.08 0)(effects (font (size 1.0 1.0))(justify left)))
-			(property "Footprint" "" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(property "Datasheet" "~" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(symbol "loc_D_TVS_0_1"
-				(rectangle (start -6.35 5.08)(end 6.35 -5.08)(stroke (width 0.2)(type default))(fill (type background)))
-			)
-			(symbol "loc_D_TVS_1_1"
-				(pin passive line (at -10.16 0.00 0)(length 3.81)
-					(name "K" (effects (font (size 1.0 1.0))))
-					(number "1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 0.00 180)(length 3.81)
-					(name "A" (effects (font (size 1.0 1.0))))
-					(number "2" (effects (font (size 0.9 0.9)))))
-			)
+			(embedded_fonts no)
 		)
 		(symbol "j2534gen:Device_C"
-			(pin_names (offset 0.508))(exclude_from_sim no)(in_bom yes)(on_board yes)
-			(property "Reference" "C" (at -6.35 6.35 0)(effects (font (size 1.27 1.27))(justify left)))
-			(property "Value" "Device_C" (at -6.35 -7.08 0)(effects (font (size 1.0 1.0))(justify left)))
-			(property "Footprint" "" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
-			(property "Datasheet" "~" (at 0 0 0)(effects (font (size 1.27 1.27))(hide yes)))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at -6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Device_C"
+				(at -6.35 -7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Device_C_0_1"
-				(rectangle (start -6.35 5.08)(end 6.35 -5.08)(stroke (width 0.2)(type default))(fill (type background)))
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 			)
 			(symbol "Device_C_1_1"
-				(pin passive line (at -10.16 0.00 0)(length 3.81)
-					(name "~" (effects (font (size 1.0 1.0))))
-					(number "1" (effects (font (size 0.9 0.9)))))
-				(pin passive line (at 10.16 0.00 180)(length 3.81)
-					(name "~" (effects (font (size 1.0 1.0))))
-					(number "2" (effects (font (size 0.9 0.9)))))
+				(pin passive line
+					(at -10.16 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "j2534gen:Device_R"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at -6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Device_R"
+				(at -6.35 -7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Device_R_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Device_R_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "j2534gen:Power_Protection_USBLC6-2SC6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Power_Protection_USBLC6-2SC6"
+				(at -6.35 -7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Power_Protection_USBLC6-2SC6_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Power_Protection_USBLC6-2SC6_1_1"
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 3.81)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 3.81)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 3.81)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 3.81)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "j2534gen:loc_D_TVS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "loc_D_TVS"
+				(at -6.35 -7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "loc_D_TVS_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "loc_D_TVS_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 46.99 57.15)
+		(uuid "2eff9dd5-de9f-aafb-fd83-75d011ae4011")
+	)
+	(no_connect
+		(at 46.99 62.23)
+		(uuid "d8eba021-89c3-59d5-1373-f0730c2d1a53")
+	)
+	(no_connect
+		(at 26.67 58.42)
+		(uuid "ef237b53-0528-f4ac-af7c-2f072b6818fc")
+	)
+	(global_label "N$94"
+		(shape input)
+		(at 138.43 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "1503fb94-2202-b90f-3a25-8f72eb36bb7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.43 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
-	(symbol (lib_id "j2534gen:Connector_USB_C_Receptacle")(at 36.83 48.26 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
-		(uuid "3ee53d44-fcb9-084a-4e6e-7ebf2d8c33a6")
-		(property "Reference" "J_USB" (at 30.48 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "USB_C_Receptacle" (at 30.48 68.04 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085" (at 36.83 48.26 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 36.83 48.26 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "J_USB") (unit 1))))
+	(global_label "N$94"
+		(shape input)
+		(at 46.99 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "153641d1-6e64-41b2-2b32-130b9e89d89d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
-	(global_label "GND_H" (shape input)(at 26.67 33.02 180)(effects (font (size 1.0 1.0))(justify right))(uuid "ebb0f7c7-10f5-c521-6a68-42efa169869c"))
-	(no_connect (at 26.67 35.56) (uuid "ef7abf20-c0f2-056a-8d7d-12cc3c84a192"))
-	(no_connect (at 26.67 38.10) (uuid "519f418f-a1a2-1381-0f8f-b815d5ff7b34"))
-	(global_label "GND_H" (shape input)(at 26.67 40.64 180)(effects (font (size 1.0 1.0))(justify right))(uuid "fd8bae8e-d276-a899-ddc3-027075ed9b55"))
-	(no_connect (at 26.67 43.18) (uuid "b99c5619-cac1-c521-afb1-0f1a1b14f2e2"))
-	(no_connect (at 26.67 45.72) (uuid "35e0edcd-0ab3-6f7a-b59b-4f9ddbef9451"))
-	(global_label "VBUS" (shape input)(at 26.67 48.26 180)(effects (font (size 1.0 1.0))(justify right))(uuid "ff83995c-ff52-a1b2-f46f-4cda680044b8"))
-	(global_label "N$93" (shape input)(at 26.67 50.80 180)(effects (font (size 1.0 1.0))(justify right))(uuid "4f73675d-3fa6-574d-e3d4-6e96dab86b35"))
-	(global_label "USB_DP" (shape input)(at 26.67 53.34 180)(effects (font (size 1.0 1.0))(justify right))(uuid "ffa02d63-e182-0dcb-feb4-cadb76fa8fd4"))
-	(global_label "USB_DM" (shape input)(at 26.67 55.88 180)(effects (font (size 1.0 1.0))(justify right))(uuid "20ba1917-72dc-8e8a-4223-824c765791fa"))
-	(no_connect (at 26.67 58.42) (uuid "ef237b53-0528-f4ac-af7c-2f072b6818fc"))
-	(global_label "VBUS" (shape input)(at 26.67 60.96 180)(effects (font (size 1.0 1.0))(justify right))(uuid "e8a1fcb5-29cd-6dca-e4f3-972b0e194f7c"))
-	(global_label "GND_H" (shape input)(at 26.67 63.50 180)(effects (font (size 1.0 1.0))(justify right))(uuid "b524cdb2-ef13-f6d3-f1a5-38f8ade63dd9"))
-	(no_connect (at 46.99 34.29) (uuid "cb10eb13-213c-3dfa-79ba-22d0958d2f82"))
-	(no_connect (at 46.99 36.83) (uuid "ab71d193-01e4-999b-f47e-2c7c7d2ae053"))
-	(global_label "GND_H" (shape input)(at 46.99 39.37 0)(effects (font (size 1.0 1.0))(justify left))(uuid "5773ed89-0f2c-297a-84b7-eb1d28ab288c"))
-	(no_connect (at 46.99 41.91) (uuid "353ca384-ef96-916c-8fb4-7c510220c68f"))
-	(no_connect (at 46.99 44.45) (uuid "3bbbbff1-12b9-748d-e21f-ca51f6619611"))
-	(global_label "VBUS" (shape input)(at 46.99 46.99 0)(effects (font (size 1.0 1.0))(justify left))(uuid "afb2f343-2202-26d8-061b-b80a614a1fc0"))
-	(global_label "N$94" (shape input)(at 46.99 49.53 0)(effects (font (size 1.0 1.0))(justify left))(uuid "153641d1-6e64-41b2-2b32-130b9e89d89d"))
-	(global_label "USB_DP" (shape input)(at 46.99 52.07 0)(effects (font (size 1.0 1.0))(justify left))(uuid "97c8aa14-0403-8510-536d-df5e88b15a04"))
-	(global_label "USB_DM" (shape input)(at 46.99 54.61 0)(effects (font (size 1.0 1.0))(justify left))(uuid "b05484e4-8442-49a3-8d71-fe21fe7d342d"))
-	(no_connect (at 46.99 57.15) (uuid "2eff9dd5-de9f-aafb-fd83-75d011ae4011"))
-	(global_label "VBUS" (shape input)(at 46.99 59.69 0)(effects (font (size 1.0 1.0))(justify left))(uuid "aede5bbc-7d5c-8e15-9bff-c80c2fc7b596"))
-	(no_connect (at 46.99 62.23) (uuid "d8eba021-89c3-59d5-1373-f0730c2d1a53"))
-	(symbol (lib_id "j2534gen:Device_R")(at 92.71 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
+	(global_label "USB_DM"
+		(shape input)
+		(at 26.67 55.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "20ba1917-72dc-8e8a-4223-824c765791fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 102.87 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "229667c5-2cd5-e591-62ae-a9f090577321")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 306.07 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "44a4242c-c34d-1de2-40a8-0f11d09f7cfe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 306.07 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 250.19 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "4c61a627-80f1-5775-c7fd-0e49766f77da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "N$93"
+		(shape input)
+		(at 26.67 50.8 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "4f73675d-3fa6-574d-e3d4-6e96dab86b35")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 46.99 39.37 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "5773ed89-0f2c-297a-84b7-eb1d28ab288c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 158.75 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "76ffe92c-4584-b1b4-5e60-4fa6d1e1261c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.75 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 194.31 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "7fa55935-e426-cf97-6c5a-4899162b9d2a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP"
+		(shape input)
+		(at 214.63 38.1 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "81f292f6-41c0-83dd-294a-deb3f1a7d748")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM"
+		(shape input)
+		(at 214.63 33.02 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "87e0ad6d-82dd-9018-9892-9902d03a0a36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP"
+		(shape input)
+		(at 46.99 52.07 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "97c8aa14-0403-8510-536d-df5e88b15a04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "N$93"
+		(shape input)
+		(at 82.55 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "9f66d547-6dda-d744-223e-c1acfa4c79e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.55 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM"
+		(shape input)
+		(at 194.31 38.1 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "a1d85d46-7bf6-fbee-50f9-668b872962ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 46.99 59.69 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "aede5bbc-7d5c-8e15-9bff-c80c2fc7b596")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 46.99 46.99 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "afb2f343-2202-26d8-061b-b80a614a1fc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DM"
+		(shape input)
+		(at 46.99 54.61 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b05484e4-8442-49a3-8d71-fe21fe7d342d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 26.67 63.5 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "b524cdb2-ef13-f6d3-f1a5-38f8ade63dd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 361.95 35.56 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "c6711057-224b-c531-4797-708bee7e8f22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 361.95 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 326.39 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d9096701-0acc-65e7-960d-e2a7d2a3ded9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 326.39 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 214.63 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "e65fdf67-6118-5aba-5d27-94f334a5f340")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 26.67 60.96 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "e8a1fcb5-29cd-6dca-e4f3-972b0e194f7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 26.67 33.02 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ebb0f7c7-10f5-c521-6a68-42efa169869c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP"
+		(shape input)
+		(at 194.31 33.02 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ebfa18a9-4065-7796-1cd6-1ee182d53109")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 382.27 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "faf675db-b09d-fc6b-af3c-597727d3a564")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 382.27 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 26.67 40.64 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "fd8bae8e-d276-a899-ddc3-027075ed9b55")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND_H"
+		(shape input)
+		(at 270.51 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "fe901392-9771-8a8c-f68e-4e5c6ccaaf2e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.51 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 26.67 48.26 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ff83995c-ff52-a1b2-f46f-4cda680044b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_DP"
+		(shape input)
+		(at 26.67 53.34 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ffa02d63-e182-0dcb-feb4-cadb76fa8fd4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.67 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "j2534gen:Connector_USB_C_Receptacle")
+		(at 36.83 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bebbeeeb-7f25-0e23-9768-d709839afe5b")
+		(property "Reference" "J_USB1"
+			(at 30.48 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USB_C_Receptacle"
+			(at 30.48 68.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085"
+			(at 36.83 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B3"
+			(uuid "e81bf2e6-b371-4d3c-8a68-6ca002897727")
+		)
+		(pin "A11"
+			(uuid "59e7954b-7db8-48d0-9ad4-08116f1c88c6")
+		)
+		(pin "B7"
+			(uuid "4ee3a121-e6fd-40d1-979c-f3e9373a9fd3")
+		)
+		(pin "B10"
+			(uuid "13a07b0f-1a73-49e3-b990-8ca8952762b8")
+		)
+		(pin "B12"
+			(uuid "850226dd-a6b9-4255-967a-4a4f097a51a2")
+		)
+		(pin "A12"
+			(uuid "de7098ba-cdc7-4001-aa1e-3e0d0d44128a")
+		)
+		(pin "B9"
+			(uuid "e982377f-79f4-47ec-88d3-fe649d63a1c9")
+		)
+		(pin "S1"
+			(uuid "20b34bbc-68ed-4294-b974-33b311b11d0b")
+		)
+		(pin "A1"
+			(uuid "5ed3fdf6-5c0a-46e7-ba07-52fa16395b42")
+		)
+		(pin "A7"
+			(uuid "a8f0da4e-daab-43b4-bcf7-d263b7c06ab9")
+		)
+		(pin "A6"
+			(uuid "b4464107-3990-4e29-be1b-deb8a5b2f7ec")
+		)
+		(pin "A5"
+			(uuid "dc6fc208-474d-4e76-a797-f47abd24fe84")
+		)
+		(pin "A2"
+			(uuid "33bb42e3-120f-4109-a49c-6da52d494fed")
+		)
+		(pin "A9"
+			(uuid "6e2a474f-559c-4c00-a535-26ad29b30b0c")
+		)
+		(pin "A10"
+			(uuid "5ec1f46c-93d6-4894-83bf-47dd8535168c")
+		)
+		(pin "B2"
+			(uuid "191d39fb-ffd1-4e58-b6ee-ae0a3a1d82b9")
+		)
+		(pin "B5"
+			(uuid "8f95ca5d-94c1-43a8-b10f-a4d05fa3a9d9")
+		)
+		(pin "A4"
+			(uuid "35565c45-ff91-4aa7-8928-55d6655be898")
+		)
+		(pin "A8"
+			(uuid "09a4ae9d-c10c-4d7f-a43d-f85c7caece48")
+		)
+		(pin "B1"
+			(uuid "a994d436-0c6f-49be-bc30-ceeb0d3729bf")
+		)
+		(pin "A3"
+			(uuid "8d59ca19-005c-4dc0-998d-7fa9e7343543")
+		)
+		(pin "B4"
+			(uuid "335d61af-5f51-4cee-81c2-935d60968909")
+		)
+		(pin "B6"
+			(uuid "ad426284-cc07-4e8f-9e2d-23cd3cc91cc7")
+		)
+		(pin "B8"
+			(uuid "0e7e59a6-b3a0-4775-bfe9-53a2124743e8")
+		)
+		(pin "B11"
+			(uuid "08006955-fd64-4fbc-9e78-a59ad7754923")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "J_USB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "j2534gen:Device_R")
+		(at 92.71 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "7de7fb37-d120-0504-5e0f-05a76201e9e9")
-		(property "Reference" "R_USB1" (at 86.36 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "5.1k" (at 86.36 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 92.71 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 92.71 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "R_USB1") (unit 1))))
+		(property "Reference" "R_USB1"
+			(at 86.36 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 86.36 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 92.71 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5943c851-9f56-426a-bf0d-0085d1fcfb2a")
+		)
+		(pin "1"
+			(uuid "5999d301-6c37-48e7-b24e-3ac07b3523b8")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "R_USB1")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(global_label "N$93" (shape input)(at 82.55 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "9f66d547-6dda-d744-223e-c1acfa4c79e3"))
-	(global_label "GND_H" (shape input)(at 102.87 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "229667c5-2cd5-e591-62ae-a9f090577321"))
-	(symbol (lib_id "j2534gen:Device_R")(at 148.59 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
-		(uuid "b111828b-9887-bc49-8d48-e807a70daa0a")
-		(property "Reference" "R_USB2" (at 142.24 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "5.1k" (at 142.24 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 148.59 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 148.59 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "R_USB2") (unit 1))))
-	)
-	(global_label "N$94" (shape input)(at 138.43 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "1503fb94-2202-b90f-3a25-8f72eb36bb7c"))
-	(global_label "GND_H" (shape input)(at 158.75 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "76ffe92c-4584-b1b4-5e60-4fa6d1e1261c"))
-	(symbol (lib_id "j2534gen:Power_Protection_USBLC6-2SC6")(at 204.47 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
-		(uuid "fdd561c8-9416-bd92-90ba-3620de3d5751")
-		(property "Reference" "D_USB1" (at 198.12 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "USBLC6-2SC6" (at 198.12 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 204.47 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 204.47 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "D_USB1") (unit 1))))
-	)
-	(global_label "USB_DP" (shape input)(at 194.31 33.02 180)(effects (font (size 1.0 1.0))(justify right))(uuid "ebfa18a9-4065-7796-1cd6-1ee182d53109"))
-	(global_label "GND_H" (shape input)(at 194.31 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "7fa55935-e426-cf97-6c5a-4899162b9d2a"))
-	(global_label "USB_DM" (shape input)(at 194.31 38.10 180)(effects (font (size 1.0 1.0))(justify right))(uuid "a1d85d46-7bf6-fbee-50f9-668b872962ab"))
-	(global_label "USB_DM" (shape input)(at 214.63 33.02 0)(effects (font (size 1.0 1.0))(justify left))(uuid "87e0ad6d-82dd-9018-9892-9902d03a0a36"))
-	(global_label "VBUS" (shape input)(at 214.63 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "e65fdf67-6118-5aba-5d27-94f334a5f340"))
-	(global_label "USB_DP" (shape input)(at 214.63 38.10 0)(effects (font (size 1.0 1.0))(justify left))(uuid "81f292f6-41c0-83dd-294a-deb3f1a7d748"))
-	(symbol (lib_id "j2534gen:loc_D_TVS")(at 260.35 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
-		(uuid "e087a7ed-1b06-671a-1bb7-53a92c8b956d")
-		(property "Reference" "D_USB3" (at 254.00 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "SMBJ5.0A" (at 254.00 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Diode_SMD:D_SMB" (at 260.35 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 260.35 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "D_USB3") (unit 1))))
-	)
-	(global_label "VBUS" (shape input)(at 250.19 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "4c61a627-80f1-5775-c7fd-0e49766f77da"))
-	(global_label "GND_H" (shape input)(at 270.51 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "fe901392-9771-8a8c-f68e-4e5c6ccaaf2e"))
-	(symbol (lib_id "j2534gen:Device_C")(at 316.23 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
+	(symbol
+		(lib_id "j2534gen:Device_C")
+		(at 316.23 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "a4e80f64-2228-7849-76b1-5b7c834616a6")
-		(property "Reference" "C_USB1" (at 309.88 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "10uF" (at 309.88 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 316.23 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 316.23 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "C_USB1") (unit 1))))
+		(property "Reference" "C_USB1"
+			(at 309.88 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 309.88 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 316.23 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c02e8084-ad07-45fa-9aa6-e3b6ab31bd16")
+		)
+		(pin "2"
+			(uuid "a3287f4e-3d93-4587-9a9b-e59a3975ee76")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "C_USB1")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(global_label "VBUS" (shape input)(at 306.07 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "44a4242c-c34d-1de2-40a8-0f11d09f7cfe"))
-	(global_label "GND_H" (shape input)(at 326.39 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "d9096701-0acc-65e7-960d-e2a7d2a3ded9"))
-	(symbol (lib_id "j2534gen:Device_C")(at 372.11 35.56 0)(unit 1)
-		(in_bom yes)(on_board yes)(dnp no)
+	(symbol
+		(lib_id "j2534gen:Device_R")
+		(at 148.59 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b111828b-9887-bc49-8d48-e807a70daa0a")
+		(property "Reference" "R_USB2"
+			(at 142.24 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 142.24 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 148.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3112a549-ca96-4c4e-ba23-d86d11187053")
+		)
+		(pin "1"
+			(uuid "2a6d1fe4-2b00-41c2-8386-2a3979a356b4")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "R_USB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "j2534gen:Device_C")
+		(at 372.11 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "b48f7827-6aeb-e465-980d-05fb820599b0")
-		(property "Reference" "C_USB2" (at 365.76 29.21 0)(effects (font (size 1.27 1.27))(justify left)))
-		(property "Value" "100nF" (at 365.76 42.64 0)(effects (font (size 1.0 1.0))(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 372.11 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(property "Datasheet" "~" (at 372.11 35.56 0)(effects (font (size 1.27 1.27))(hide yes)))
-		(instances (project "j2534-interface" (path "/" (reference "C_USB2") (unit 1))))
+		(property "Reference" "C_USB2"
+			(at 365.76 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 365.76 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 372.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 372.11 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc01c6b4-6e55-44ea-aeb1-5e9270f8699d")
+		)
+		(pin "2"
+			(uuid "8ffff061-e179-4b05-b43b-cfc89d3b5a09")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "C_USB2")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(global_label "VBUS" (shape input)(at 361.95 35.56 180)(effects (font (size 1.0 1.0))(justify right))(uuid "c6711057-224b-c531-4797-708bee7e8f22"))
-	(global_label "GND_H" (shape input)(at 382.27 35.56 0)(effects (font (size 1.0 1.0))(justify left))(uuid "faf675db-b09d-fc6b-af3c-597727d3a564"))
-	(sheet_instances (path "/" (page "1")))
+	(symbol
+		(lib_id "j2534gen:loc_D_TVS")
+		(at 260.35 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e087a7ed-1b06-671a-1bb7-53a92c8b956d")
+		(property "Reference" "D_USB3"
+			(at 254 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMBJ5.0A"
+			(at 254 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 260.35 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d2cda4a0-a465-443d-80d8-0b2e88d7353b")
+		)
+		(pin "1"
+			(uuid "ddcd58ad-7005-4cff-9b65-7679392eab77")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "D_USB3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "j2534gen:Power_Protection_USBLC6-2SC6")
+		(at 204.47 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fdd561c8-9416-bd92-90ba-3620de3d5751")
+		(property "Reference" "D_USB1"
+			(at 198.12 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 198.12 42.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 204.47 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9c992579-de57-4f79-9a3b-6c26c8822a29")
+		)
+		(pin "4"
+			(uuid "a21ec23b-2cee-4140-93eb-b75bf18180e9")
+		)
+		(pin "1"
+			(uuid "fb923587-2adb-4b41-bce7-d202d8916f1b")
+		)
+		(pin "3"
+			(uuid "28fa2779-27b4-468a-9803-8c7c8ec5eb2d")
+		)
+		(pin "5"
+			(uuid "bcbc529b-b901-4f6b-90d8-19e250f1fadf")
+		)
+		(pin "6"
+			(uuid "1ba8bae3-0db4-4a79-a35f-3a74571fd65a")
+		)
+		(instances
+			(project "omnibox-v1"
+				(path "/99cf8779-9763-f002-27bc-877b87594a28/18d70913-c061-d4bf-0221-c31a47fbcb2f"
+					(reference "D_USB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

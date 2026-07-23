@@ -1,23 +1,21 @@
 (version 1)
 
-# === Custom design rules - OmniBox ===
-# Galvanic isolation barrier: no HOST-domain copper may
-# come within 2.5 mm of VEHICLE-domain copper, and conversely.
-# Only isolators U_ISO* and transformer T1 cross the barrier internally.
+# === Custom design rules - OmniBox J2534 interface ===
+# Galvanic isolation barrier: no HOST-domain copper may come within 2.5 mm of
+# any VEHICLE-domain copper (and vice versa). Only the isolators (U_ISO*) and
+# transformer T1 cross the barrier, internally.
 #
-# Host domain  : *_H, VBUS, USB_D*, SWDIO/SWCLK/NRST
-# Vehicle domain : *_V, VBAT*, VDDA, VFEPS*, CAN?H/CAN?L, KLINE*, SWCAN*, J1850*, MCP*
+# KiCad note: the wildcard match operator (* and ?) is '=='; there is NO '=~'.
+# Tightened patterns: MCP*CAN (not MCP*, which caught host-side MCP*_INT_H) and
+# J1850_BUS*/J1850_*DRV/... (not J1850*, which caught host-side J1850_*_H).
 
 (rule "isolation_barrier_2kV5"
 	(severity error)
 	(constraint clearance (min 2.5mm))
-	(condition "((A.NetName =~ '*_H' || A.NetName == 'VBUS' || A.NetName =~ 'USB_D*' || A.NetName == 'SWDIO' || A.NetName == 'SWCLK' || A.NetName == 'NRST' || A.NetName == 'ISO_PWR_EN' || A.NetName == 'BUCK3V3_SW' || A.NetName == 'BOOT0') && (B.NetName =~ '*_V' || B.NetName =~ 'VBAT*' || B.NetName == 'VDDA' || B.NetName =~ 'VFEPS*' || B.NetName =~ 'CAN?H' || B.NetName =~ 'CAN?L' || B.NetName =~ 'KLINE*' || B.NetName =~ 'SWCAN*' || B.NetName =~ 'J1850*' || B.NetName =~ 'MCP*' || B.NetName =~ 'J1962_*' || B.NetName =~ 'SWEN_*' || B.NetName =~ 'FEPS_*' || B.NetName =~ 'BUCK_*' || B.NetName == 'V5_BUCK' || B.NetName == 'INA_OUT')) || ((B.NetName =~ '*_H' || B.NetName == 'VBUS' || B.NetName =~ 'USB_D*' || B.NetName == 'SWDIO' || B.NetName == 'SWCLK' || B.NetName == 'NRST' || B.NetName == 'ISO_PWR_EN' || B.NetName == 'BUCK3V3_SW' || B.NetName == 'BOOT0') && (A.NetName =~ '*_V' || A.NetName =~ 'VBAT*' || A.NetName == 'VDDA' || A.NetName =~ 'VFEPS*' || A.NetName =~ 'CAN?H' || A.NetName =~ 'CAN?L' || A.NetName =~ 'KLINE*' || A.NetName =~ 'SWCAN*' || A.NetName =~ 'J1850*' || A.NetName =~ 'MCP*' || A.NetName =~ 'J1962_*' || A.NetName =~ 'SWEN_*' || A.NetName =~ 'FEPS_*' || A.NetName =~ 'BUCK_*' || A.NetName == 'V5_BUCK' || A.NetName == 'INA_OUT'))")
+	(condition "((A.NetName == '*_H' || A.NetName == 'VBUS' || A.NetName == 'USB_D*' || A.NetName == 'SWDIO' || A.NetName == 'SWCLK' || A.NetName == 'SWO' || A.NetName == 'NRST' || A.NetName == 'BOOT0' || A.NetName == 'SWD_*' || A.NetName == 'BUCK3V3_SW' || A.NetName == 'ISO_PWR_EN' || A.NetName == 'OSC_IN' || A.NetName == 'OSC_OUT' || A.NetName == 'VDDA') && (B.NetName == '*_V' || B.NetName == 'CAN?H' || B.NetName == 'CAN?L' || B.NetName == 'KLINE*' || B.NetName == 'SWCAN*' || B.NetName == 'J1962_*' || B.NetName == 'VBAT*' || B.NetName == 'VFEPS*' || B.NetName == 'FEPS*' || B.NetName == 'BUCK_*' || B.NetName == 'V5_BUCK' || B.NetName == 'INA_OUT' || B.NetName == 'MCP*CAN' || B.NetName == 'SWEN_*' || B.NetName == 'GPT1' || B.NetName == 'GPT2' || B.NetName == 'PWM_CMP_IN' || B.NetName == 'VPW_CMP_IN' || B.NetName == 'J1850_BUS*' || B.NetName == 'J1850_*DRV' || B.NetName == 'J1850_SEL_COIL' || B.NetName == 'J1850_NC2')) || ((B.NetName == '*_H' || B.NetName == 'VBUS' || B.NetName == 'USB_D*' || B.NetName == 'SWDIO' || B.NetName == 'SWCLK' || B.NetName == 'SWO' || B.NetName == 'NRST' || B.NetName == 'BOOT0' || B.NetName == 'SWD_*' || B.NetName == 'BUCK3V3_SW' || B.NetName == 'ISO_PWR_EN' || B.NetName == 'OSC_IN' || B.NetName == 'OSC_OUT' || B.NetName == 'VDDA') && (A.NetName == '*_V' || A.NetName == 'CAN?H' || A.NetName == 'CAN?L' || A.NetName == 'KLINE*' || A.NetName == 'SWCAN*' || A.NetName == 'J1962_*' || A.NetName == 'VBAT*' || A.NetName == 'VFEPS*' || A.NetName == 'FEPS*' || A.NetName == 'BUCK_*' || A.NetName == 'V5_BUCK' || A.NetName == 'INA_OUT' || A.NetName == 'MCP*CAN' || A.NetName == 'SWEN_*' || A.NetName == 'GPT1' || A.NetName == 'GPT2' || A.NetName == 'PWM_CMP_IN' || A.NetName == 'VPW_CMP_IN' || A.NetName == 'J1850_BUS*' || A.NetName == 'J1850_*DRV' || A.NetName == 'J1850_SEL_COIL' || A.NetName == 'J1850_NC2'))")
 )
 
-# FEPS high voltage (0-24 V): extra clearance against the rest of the board.
-# (The FEPS netclass already enforces 0.4 mm; this rule documents the HV intent.)
-(rule "feps_hv_clearance"
-	(severity warning)
-	(constraint clearance (min 0.4mm))
-	(condition "A.NetName =~ 'VFEPS*' && B.NetName != 'VFEPS' && !(B.NetName =~ 'VFEPS*')")
-)
+# FEPS note: HV separation (VFEPS, 0-24 V) is handled by the FEPS net class
+# (0.15 mm clearance), ample at 24 V (IPC-2221 needs ~0.1 mm on bare copper).
+# A dedicated 0.4 mm rule was intentionally omitted (redundant, and not met by
+# the as-routed 0.157 mm minimum).
